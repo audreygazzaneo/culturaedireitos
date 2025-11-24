@@ -309,7 +309,7 @@ header{
 /* Caixa de comentário */
 .comment-box {
     background: #aee3fa;
-    width: 85%;
+    width: 65%;
     margin: 40px auto;
     padding: 25px;
     border-radius: 12px;
@@ -355,7 +355,7 @@ textarea {
 /* Comentários */
 .comment {
     background: #aee3fa;
-    width: 85%;
+    width: 65%;
     margin: 25px auto;
     padding: 25px;
     border-radius: 12px;
