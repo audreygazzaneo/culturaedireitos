@@ -379,16 +379,29 @@ textarea {
     padding: 15px;
     margin-top: 10px;
     border-radius: 10px;
-    line-height: 1.5;
+    line-height: 1.8;
+    align-items: center;
 }
 
 .interactions {
     margin-top: 10px;
     display: flex;
     gap: 15px;
-    font-size: 14px;
+    font-size: 16px;
+    font-style: oblique;
     color: #333;
+    cursor: pointer;
 }   
+
+.interactions img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.interactions span:hover {
+    color: #0f1a2c;
+    font-weight: 600;
+}
 
 
 /*FOOTER*/
