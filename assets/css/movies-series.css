@@ -192,23 +192,16 @@ header{
     font-family: "Poppins", sans-serif;
 }
 
-.topo-jogos {
+.topo-filmes {
     width: 60%;
     margin: 150px auto 40px auto; 
     background: #bfe3ff;
-    padding: 35px 0;
+    padding: 25px 0;
     border-radius: 20px;
     text-align: center;
     position: relative;
 }
-
-.topo-jogos h1 {
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 5px;
-}
-
-.topo-jogos .icone {
+.topo-filmes .icone {
     position: absolute;
     top: 10px;
     left: 100px;
@@ -216,7 +209,7 @@ header{
     opacity: 0.8;
 }
 
-.topo-jogos .icone2 {
+.topo-filmes .icone2 {
     position: absolute;
     top: 10px;
     right: 100px;
@@ -224,10 +217,12 @@ header{
     opacity: 0.8;
 }
 
-.jogos {
-    margin-top: 200px;  
-    padding: 10rem;
+.topo-filmes h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 5px;
 }
+
 
 .jogos .container {
     width: 90%;
@@ -243,7 +238,7 @@ header{
     color: #1a1a1a;
 }
 
-.grid-jogos {
+.grid-filmes {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
@@ -263,7 +258,7 @@ header{
 }
 
 .card img {
-    width: 450px;
+    width: 350px;
     border-radius: 18px;
     margin-bottom: 15px;
 }
@@ -290,18 +285,7 @@ header{
     color: #1a1a1a;
 }
 
-.btn {
-    align-items:baseline;
-    padding-left: 800px;
-    margin-top: 20px;
-    background: #f7cf66;
-    border: none;
-    padding: 18px 40px;
-    font-weight: bold;
-    border-radius: 15px;
-    cursor: pointer;
-    font-size: 1.2em;
-}
+
 
 
 /*FOOTER*/
