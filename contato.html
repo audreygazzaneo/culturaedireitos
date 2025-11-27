@@ -45,9 +45,9 @@
                 <!-- Seletor de idioma -->
                 <div class="language-selector">
                     <ion-icon name="globe-outline" class="lang-icon"></ion-icon>
-                     <select class="lang-select" onchange="location = this.value;">
-                     <option value="contato.html" selected>BR</option>
-                     <option value="contato-en.html">EN</option>
+                    <select class="lang-select" onchange="location = this.value;">
+                        <option value="contato.html" selected>BR</option>
+                        <option value="contato-en.html">EN</option>
                     </select>
                 </div>
 
@@ -58,51 +58,173 @@
             </div>
         </nav>
     </header>
+    <!-- Conteúdo principal -->
+    <main class="main-content">
+        <h1>Deixe seu comentário anonimamente</h1>
+        <h2>Compartilhe suas experiências e opiniões sobre representatividade e relatos associados para <br>que possamos
+            disseminar a respeito e mostrar nossos direitos universais. <br> Garantimos seu relato anônimo e seguro.
+            <br> Sua voz é importante para nós e você não está sozinho!</h2>
+        <br>
+        <hr>
+        <br>
+        <p>Temas sugeridos para comentários e relatos: <br>
+            <strong>Liberdade e Igualdade:</strong> Assuntos relacionados a comunidade LGBTQIA+ e as mulheres cis e
+            trans (como machismo, desigualdade de gênero). <br>
+            <strong>Saúde e Bem-Estar:</strong> Questões sobre saúde mental, acessibilidade e inclusão (como depressão,
+            ansiedade, deficiências). <br>
+            <strong>Educação e Cultura:</strong> Temas ligados à educação inclusiva, diversidade cultural e
+            acessibilidade na educação (como racismo, etnia, cultura). <br>
+            <strong>Sociedade anti-racismo:</strong> Discussões sobre racismo, discriminação racial e promoção da
+            igualdade racial (como racismo estrutural, preconceito).
+        </p>
+    </main>
 
-    <!--CONTATO/ABA-->
-    <section class="contatos">
-        <div class="contato-container">
-            <h2>Entre em contato conosco:</h2>
-                     <div class="contato">
-                         <p><img src="Assets/IMG/pin-de-localizacao.png"> <strong>Contato:</strong></p>
-                         <p><img src="Assets/IMG/o-email.png"> <strong>E-mail:</strong>culturaedireitos@gmail.com</p>
-                        <p><img src="Assets/IMG/telefone.png"><strong>Telefone e WhatsApp:</strong> (12) 99999-9999</p>
-                     </div>
+    <!-- Caixa de criar comentário -->
+    <section class="comment-box">
+        <img src="assets/img/icon-anonimo.png" class="avatar">
 
-                      <div class="Footer-bottom">
-           
-            <div class="social">
-                <p>Siga nas redes sociais:</p>
-                <div class="Icones">
-                    <a href="#"><img src="Assets/IMG/instagram.png" alt="instagram"></a>
-                    <a href="#"><img src="Assets/IMG/facebook.png" alt="facebook"></a>
-                    <a href="#"><img src="Assets/IMG/tiktok.png" alt="tiktok"></a>
-                    <a href="#"><img src="Assets/IMG/youtube.png" alt="youtube"></a>
-                </div>  
-            </div>
-        </div>
-                     
-                     <p>Participe do nosso canal no WhatsApp e fique a parte de nossas atualizações.</p>
-            <button class="btn"><img src="assets/img/WhatsApp.svg.png">Entrar no canal <br>do WhatsApp</button>
+        <div class="comment-content">
+            <textarea placeholder="deixar um comentário..."></textarea>
+            <select class="box-select">
+                <option value="" disabled selected>Escolha um tema</option>
+                <option value="liberdade-e-igualdade">Liberdade e Igualdade</option>
+                <option value="saude-e-bem">Saúde e Bem-Estar</option>
+                <option value="educacao-e-cultura">Educação e Cultura</option>
+                <option value="sociedade-antiracismo">Sociedade anti-racismo</option>
+            </select> <button class="btn-publicar">Publicar</button>
         </div>
     </section>
 
+    <section class="comments-section">
 
-    <!--FOOTER-->
-    <footer>
-        <div class="Footer-top">
-            <div class="Footer-logo">
-                <img src="Assets/IMG/Cultura & Direitos (1).png" alt="Cultura & Direitos">
-            </div>
-            <p>Promovendo a igualdade, o respeito e a justiça social por meio da informação e da cultura.</p>
+        <div class="comment-title">
+            <h1>Liberdade e Igualdade</h1>
         </div>
 
-        <p class="copy">Direitos Autorais © 2025 - Todos os direitos reservados. Desenvolvido para fins educativos e de conscientização social.</p>
-    </footer>
 
-    <!--Ionic-->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <!-- Comentário 1 -->
+        <section class="comment">
+            <img src="assets/img/icon-anonimo.png" class="avatar">
+
+            <div class="comment-body">
+                <h3>Relato 01</h3>
+
+                <div class="comment-text">
+                    Life is Strange e Tell Me Why sempre vão ter um lugar especial pra mim.
+                    Os dois jogos tratam sentimentos e traumas de forma tão humana que parece que você está vivendo
+                    aquilo junto com os personagens.
+                    A narrativa é profunda, sensível e deixa aquela sensação de que cada escolha pesa de verdade. São
+                    experiências que ficam na mente por muito tempo.
+                </div>
+
+                <div class="interactions">
+                    <span><img src="assets/img/like-heart.png"> 30</span>
+                    <span><img src="assets/img/chat-bubble.png"> 4 respostas</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="comment-title">
+            <h1>Saúde e Bem-Estar</h1>
+        </div>
+
+        <!-- Comentário 2 -->
+        <section class="comment">
+            <img src="assets/img/icon-anonimo.png" class="avatar">
+
+            <div class="comment-body">
+                <h3>Relato 01</h3>
+
+                <div class="comment-text">
+                    The Last of Us Part II é um dos jogos mais intensos e emocionalmente pesados que já joguei.
+                    A forma como ele trabalha vingança, perda e humanidade é simplesmente absurda.
+                    Mesmo sendo um jogo divisivo, acho que poucos conseguem entregar uma narrativa tão crua e corajosa.
+                    Terminei destruído, mas admirando cada detalhe.
+                </div>
+
+                <div class="interactions">
+                    <span><img src="assets/img/like-heart.png"> 50</span>
+                    <span><img src="assets/img/chat-bubble.png"> 6 respostas</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="comment-title">
+            <h1>Educação e Cultura</h1>
+        </div>
+
+        <!-- Comentário 2 -->
+        <section class="comment">
+            <img src="assets/img/icon-anonimo.png" class="avatar">
+
+            <div class="comment-body">
+                <h3>Relato 01</h3>
+
+                <div class="comment-text">
+                    The Last of Us Part II é um dos jogos mais intensos e emocionalmente pesados que já joguei.
+                    A forma como ele trabalha vingança, perda e humanidade é simplesmente absurda.
+                    Mesmo sendo um jogo divisivo, acho que poucos conseguem entregar uma narrativa tão crua e corajosa.
+                    Terminei destruído, mas admirando cada detalhe.
+                </div>
+        </section>
+
+                <div class="comment-title">
+            <h1>Sociedade anti-racismo</h1>
+        </div>
+
+        <!-- Comentário 2 -->
+        <section class="comment">
+            <img src="assets/img/icon-anonimo.png" class="avatar">
+
+            <div class="comment-body">
+                <h3>Relato 01</h3>
+
+                <div class="comment-text">
+                    The Last of Us Part II é um dos jogos mais intensos e emocionalmente pesados que já joguei.
+                    A forma como ele trabalha vingança, perda e humanidade é simplesmente absurda.
+                    Mesmo sendo um jogo divisivo, acho que poucos conseguem entregar uma narrativa tão crua e corajosa.
+                    Terminei destruído, mas admirando cada detalhe.
+                </div>
+        </section>
+
+
+        <!--FOOTER-->
+        <footer>
+            <div class="Footer-top">
+                <div class="Footer-logo">
+                    <img src="Assets/IMG/Cultura & Direitos (1).png" alt="Cultura & Direitos">
+                </div>
+                <p>Promovendo a igualdade, o respeito e a justiça social por meio da informação e da cultura.</p>
+            </div>
+
+            <div class="Footer-bottom">
+                <div class="contato">
+                    <p><img src="Assets/IMG/pin-de-localizacao.png"> <strong>Contato:</strong></p>
+                    <p><img src="Assets/IMG/o-email.png"> culturaedireitos@gmail.com</p>
+                    <p><img src="Assets/IMG/telefone.png"> (12) 99999-9999</p>
+                </div>
+
+
+                <div class="social">
+                    <p>Siga nas redes sociais:</p>
+                    <div class="Icones">
+                        <a href="#"><img src="Assets/IMG/instagram.png" alt="instagram"></a>
+                        <a href="#"><img src="Assets/IMG/facebook.png" alt="facebook"></a>
+                        <a href="#"><img src="Assets/IMG/tiktok.png" alt="tiktok"></a>
+                        <a href="#"><img src="Assets/IMG/youtube.png" alt="youtube"></a>
+                    </div>
+                </div>
+            </div>
+
+            <p class="copy">Direitos Autorais © 2025 - Todos os direitos reservados. Desenvolvido para fins educativos e
+                de conscientização social.</p>
+        </footer>
+
+        <!--Ionic-->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <script src="assets/js/script.js"></script>
 </body>
 
 </html>
