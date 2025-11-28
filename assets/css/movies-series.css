@@ -79,6 +79,54 @@ header{
     color: #AACADD;
     border-bottom: 2px solid #AACADD;
 }
+/*Menu Mobile */
+#mobileMenu {
+    position: absolute;
+    top: 85px;
+    width: 240px;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    padding: 1.2rem 1rem;
+    opacity: 0;
+    transform: translateY(-15px);
+    z-index: 999;
+  }
+  
+  
+  #mobileMenu li {
+    width: 100%;
+    border-bottom: 1px solid #ff9900};
+   
+  
+  #mobileMenu li:last-child {
+    border-bottom: none;
+  }
+  
+  
+  #mobileMenu a:hover {
+    border-bottom: none !important;
+    transform: translateX(4px);
+  }
+  
+  
+  #mobileMenu a{
+    display: block;
+    transition: 0.25s ease;
+    text-decoration: none;
+  }
+  
+  
+  /*quando o JS ativar*/
+  #mobileMenu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+    opacity: 1;
+    padding: 1.2rem 1rem;
+  }
+  
 /*login*/
 .login button{
     display: flex;
