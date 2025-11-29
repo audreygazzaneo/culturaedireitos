@@ -2,7 +2,6 @@
 const toggleBtn = document.querySelector('.navbar_toggle');
 const mobileMenu = document.getElementById('mobileMenu');
 
-
 // Ao clicar, adiciona/remove a classe "active"
 toggleBtn.addEventListener('click', () => {
   mobileMenu.classList.toggle('active');

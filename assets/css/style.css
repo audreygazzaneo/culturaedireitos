@@ -1004,3 +1004,127 @@ body {
         padding: 10px 0;
     }
     }}
+
+    /* Garantir que o conteúdo principal ocupe 100% da largura */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Impede que o conteúdo ultrapasse a largura da tela */
+}
+
+/* Ajuste o estilo do menu para mobile */
+.navbar_toggle {
+    display: block; /* Torna o botão de toggle visível */
+}
+
+.navbar_links {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+#mobileMenu {
+    display: none; /* Inicialmente escondido */
+    position: absolute;
+    top: 85px;
+    width: 100%;
+    max-width: 240px; /* Definir o tamanho máximo do menu */
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    padding: 1.2rem 1rem;
+    z-index: 999;
+    opacity: 0;
+    transform: translateY(-15px);
+}
+
+/* Exibe o menu mobile quando o botão de toggle for clicado */
+#mobileMenu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsividade - Ajustes para telas pequenas */
+@media (max-width: 768px) {
+    .navbar_container {
+        flex-direction: column; /* Organiza os itens do menu verticalmente */
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .navbar_links {
+        display: none; /* Esconde os links do menu padrão */
+    }
+
+    /* Torna visível o botão de menu quando a tela é pequena */
+    .navbar_toggle {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    /* Ajusta a seção hero para ocupar toda a largura */
+    .hero-section {
+        padding-block: 5rem;
+        background-position: center center;
+    }
+
+    /* Ajuste para garantir que os cards e outros elementos se ajustem */
+    .temas {
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px 10px;
+    }
+
+    .card {
+        width: 100%; /* Garante que o card ocupe 100% da largura */
+        margin: 10px 0;
+        padding: 15px;
+    }
+
+    /* Ajustes no carousel */
+    .carousel {
+        width: 100%;
+    }
+
+    .carousel-img {
+        width: 100%; /* Garante que a imagem do carrossel ocupe toda a largura */
+    }
+
+    /* Ajustes no rodapé */
+    footer {
+        padding: 20px;
+    }
+
+    .Footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .social .Icones a img {
+        width: 20px; /* Ajuste para ícones de redes sociais */
+    }
+
+    .copy {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Ajustes para telas menores (smartphones muito pequenos) */
+    .hero_container h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .card img {
+        width: 40%; /* Ajuste para a imagem dentro dos cards */
+    }
+}
