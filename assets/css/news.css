@@ -259,55 +259,71 @@ main {
 }
 
 .card {
-  background-color: #fff;
-  border-radius: 0 0 15px 15px;
-  margin-bottom: 30px;
-  padding: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
+    background-color: #fff;
+    border-radius: 0 0 15px 15px;
+    margin-bottom: 30px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row; /* Organiza a imagem à esquerda e o conteúdo à direita */
+    gap: 20px; /* Espaçamento entre a imagem e o conteúdo */
 }
 
 .card img {
-  width: 350px;
-  border-radius: 10px;
-  height: auto;
-  justify-content: left;
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card .card-content {
+    display: flex;
+    flex-direction: row; /* Alinha imagem e conteúdo */
+    gap: 20px; /* Adiciona espaço entre imagem e conteúdo */
+}
+
+.card .card-text {
+    display: flex;
+    flex-direction: column; /* Coloca título e texto na vertical */
+    justify-content: space-between;
+    width: 100%; /* O conteúdo ocupa o restante da largura */
 }
 
 .card h3 {
-  margin: 15px 0;
-  color: #222;
-  font-size: 18px;
+    margin: 15px 0;
+    color: #222;
+    font-size: 18px;
 }
 
-.card p{
+.card p {
     padding-bottom: 10px;
     font-size: 1rem;
     font-style: italic;
 }
 
-.card .acesso{
+.card .acesso {
     width: 30px;
     align-items: center;
     cursor: pointer;
+    margin-top: 10px;
 }
 
-.btn {
-    align-items:baseline;
-    padding-left: 800px;
-    margin-top: 20px;
-    background: #f7cf66;
-    border: none;
-    padding: 18px 40px;
-    font-weight: bold;
-    border-radius: 15px;
-    cursor: pointer;
-    font-size: 1.2em;
+.card .acesso,
+.card .noticia-por {
+    text-align: left;
 }
+
+.card .noticia-por {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #777;
+    font-style: italic;
+}
+
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
 /*COMENTARIOS*/
 .comentarios {
     background: #0077a3;
