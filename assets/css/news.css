@@ -239,6 +239,7 @@ main {
   padding: 40px 0;
 }
 
+
 .noticias {
   width: 80%;
   margin: 0 auto;
@@ -266,7 +267,7 @@ main {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: row; /* Organiza a imagem à esquerda e o conteúdo à direita */
-    gap: 20px; /* Espaçamento entre a imagem e o conteúdo */
+    gap: 20px; 
 }
 
 .card img {
@@ -277,15 +278,15 @@ main {
 
 .card .card-content {
     display: flex;
-    flex-direction: row; /* Alinha imagem e conteúdo */
-    gap: 20px; /* Adiciona espaço entre imagem e conteúdo */
+    flex-direction: row; 
+    gap: 20px; 
 }
 
 .card .card-text {
     display: flex;
-    flex-direction: column; /* Coloca título e texto na vertical */
-    justify-content: space-between;
-    width: 100%; /* O conteúdo ocupa o restante da largura */
+    flex-direction: column; 
+    justify-content: space-between; 
+    width: 100%; 
 }
 
 .card h3 {
