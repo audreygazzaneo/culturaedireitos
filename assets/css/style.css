@@ -630,131 +630,7 @@ footer {
     z-index: 2;
 }
 
-/* ---- GLOBAL ---- */
-
-/* Definindo a fonte base para responsividade */
-html {
-    font-size: 100%;
-    /* 1rem = 16px */
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #AACADD;
-}
-
-/* ---- CABEÇALHO ---- */
-
-.navbar_container {
-    max-width: 1500px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-}
-
-.navbar_logo img {
-    margin-top: 5px;
-    max-width: 250px;
-    display: block;
-}
-
-.navbar_links {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-}
-
-.navbar_links a {
-    color: var(--text-dark);
-    font-weight: 600;
-    font-size: 1rem;
-    transition: 0.3s;
-}
-
-.navbar_toggle {
-    font-size: 2rem;
-    display: none;
-}
-
-/* ---- MOBILE MENU ---- */
-#mobileMenu {
-    position: absolute;
-    top: 85px;
-    width: 240px;
-    background: var(--white);
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    padding: 1.2rem 1rem;
-    opacity: 0;
-    transform: translateY(-15px);
-    z-index: 999;
-}
-
-#mobileMenu.active {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-    opacity: 1;
-}
-
-/* ---- HERO ---- */
-
-.hero-section {
-    background-image: linear-gradient(to right,
-            rgba(15, 26, 44, 0.7),
-            rgba(15, 26, 44, 0.1)),
-        url("../img/ChatGPT\ Image\ 16\ de\ out.\ de\ 2025\,\ 07_53_46.png");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    padding-block: 10rem;
-}
-
-.hero_container h1 {
-    color: var(--extra-light);
-    font-size: 3.5rem;
-    font-family: var(--ff);
-}
-
-/* ---- SEÇÕES TEMAS ---- */
-
-.temas {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 25px;
-    padding: 50px 20px;
-    background: #eef2f7;
-}
-
-.card {
-    background: white;
-    border-radius: 12px;
-    width: 200px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card img {
-    width: 50px;
-    margin-bottom: 10px;
-}
-
-.card h3 {
-    font-size: 16px;
-    color: #003366;
-}
-
-/* ---- MEDIA QUERIES (Responsividade) ---- */
-
+/* ---- RESPONSIVIDADE ---- */
 @media (max-width: 1400px) {
 
     /* Ajustes para telas entre 1400px */
@@ -776,36 +652,31 @@ body {
 }
 
 @media (max-width: 1024px) {
-
     /* Ajustes para tablets (1024px) */
     .navbar_links {
-        display: none;
+        display: flex;
+    }
+
+    .navbar_container {
+        padding: 1rem;
     }
 
     .navbar_toggle {
-        display: block;
-    }
-
-    #mobileMenu.active {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.8rem;
-        opacity: 1;
+        display:contents;
     }
 
     .hero_container h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
     .temas {
-        flex-direction: column;
         gap: 20px;
+        
     }
 
     .card {
         width: 90%;
-        margin: 0 auto;
+        margin: 20px;
     }
 }
 
