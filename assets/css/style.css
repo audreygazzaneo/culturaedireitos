@@ -652,12 +652,14 @@ footer {
 }
 
 @media (max-width: 1024px) {
-    /* Ajustes para tablets (1024px) */
+    /* Ajustes para LAPTOP (1024px) */
+    
     .navbar_links {
         display: flex;
     }
 
     .navbar_container {
+        width: 100%;
         padding: 1rem;
     }
 
@@ -665,28 +667,45 @@ footer {
         display:contents;
     }
 
+    .navbar_logo img{
+        width: 200px;
+    }
+
     .hero_container h1 {
         font-size: 2.2rem;
     }
 
     .temas {
-        gap: 20px;
-        
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     .card {
-        width: 90%;
+        width: 60%;
         margin: 20px;
     }
+
+    .prev {
+        left: 80px;
+        /* seta esquerda */
+    }
+    
+    .next {
+        right: 80px;
+        /* seta direita */
+    }
+    
+
 }
 
 @media (max-width: 768px) {
 
-    /* Ajustes para telas menores (768px) */
+    /* Ajustes para tablet (768px) */
     .navbar_container {
         flex-direction: column;
         align-items: flex-start;
-        gap: 1rem;
+        gap: 0.8rem;
     }
 
     .navbar_logo img {
