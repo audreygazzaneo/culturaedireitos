@@ -653,39 +653,150 @@ footer {
 
 @media (max-width: 1024px) {
     /* Ajustes para LAPTOP (1024px) */
+    .navbar_container {
+        padding: 0.9rem !important;
+        flex-direction: row !important;
+    }
+    
+    .navbar_logo img {
+        max-width: 90px;
+        margin: 0 auto;
+    }
+    
+    .navbar_toggle {
+        display: block;
+        
+    }
     
     .navbar_links {
+        display: none;
+    }
+    
+    #mobileMenu.active {
         display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        opacity: 1;
+        padding: 0.8rem;
     }
-
-    .navbar_container {
-        width: 100%;
-        padding: 1rem;
-    }
-
-    .navbar_toggle {
-        display:contents;
-    }
-
+    
     .navbar_logo img{
-        width: 200px;
+        
+        width: 100px;
     }
-
-    .hero_container h1 {
-        font-size: 2.2rem;
-    }
-
-    .temas {
+    
+    /*busca*/
+    .search-box {
         display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        border-bottom: none;
+        border-radius: none;
+        margin-left: 0;
     }
-
+    
+    .search-box input {
+        display: block;
+        outline: none;
+        
+    }
+    
+    .search-box i {
+        font-size: 1.0rem;
+    }
+    
+    /* Título da seção hero */
+    .hero_container h1 {
+        font-size: 1.4rem;
+        text-align: center;
+        padding: 0 10px;
+    }
+    
+    /* Ajuste da seção de temas */
+    .temas {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 15px 20px;
+    }
+    
     .card {
-        width: 60%;
-        margin: 20px;
+        width: 100%;
+        padding: 10px;
     }
-
+    
+    .card img {
+        width: 35px;
+    }
+    
+    .carousel-img {
+        width: 100%;
+    }
+    
+    .cards {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+    
+    .card-not {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    
+    
+    /* Indicações da Semana */
+    .indicacoes {
+        padding: 25px 10px;
+    }
+    
+    .recomendacao-container {
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .img-game {
+        width: 100%;
+        height: auto;
+    }
+    
+    .card-game,
+    .card-movie {
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    .img-movie {
+        width: 100%;
+        height: auto;
+    }
+    
+    /* Ajustes de Footer */
+    footer {
+        padding: 20px 10px;
+    }
+    
+    .Footer-top img {
+        height: 120px;
+    }
+    
+    .Footer-top {
+        margin-bottom: 15px;
+    }
+    
+    .Footer-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .social .Icones a img {
+        width: 20px;
+    }
+    
+    .copy {
+        font-size: 11px;
+        padding: 10px 0;
+    }
     .prev {
         left: 80px;
         /* seta esquerda */
@@ -700,50 +811,151 @@ footer {
 }
 
 @media (max-width: 768px) {
+/* Ajustes para telas extra pequenas (480px) */
+.navbar_container {
+    padding: 0.9rem !important;
+    flex-direction: row !important;
+}
 
-    /* Ajustes para tablet (768px) */
-    .navbar_container {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.8rem;
-    }
+.navbar_logo img {
+    max-width: 90px;
+    margin: 0 auto;
+}
 
-    .navbar_logo img {
-        max-width: 200px;
-    }
+.navbar_toggle {
+    display: block;
+    
+}
 
-    .navbar_links {
-        display: none;
-    }
+.navbar_links {
+    display: none;
+}
 
-    #mobileMenu.active {
-        display: block;
-    }
+#mobileMenu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    opacity: 1;
+    padding: 0.8rem;
+}
 
-    .hero_container h1 {
-        font-size: 2rem;
-        text-align: center;
-    }
+.navbar_logo img{
+    
+    width: 100px;
+}
 
-    .temas {
-        flex-direction: column;
-        gap: 15px;
-        padding: 40px 20px;
-    }
+/*busca*/
+.search-box {
+    display: flex;
+    border-bottom: none;
+    border-radius: none;
+    margin-left: 0;
+}
 
-    .card {
-        width: 100%;
-        padding: 10px;
-    }
+.search-box input {
+    display: block;
+    outline: none;
 
-    .carousel-img {
-        width: 100%;
-    }
+}
 
-    .cards {
-        flex-direction: column;
-        gap: 20px;
-    }
+.search-box i {
+    font-size: 1.0rem;
+}
+
+/* Título da seção hero */
+.hero_container h1 {
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 0 10px;
+}
+
+/* Ajuste da seção de temas */
+.temas {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 20px;
+}
+
+.card {
+    width: 100%;
+    padding: 10px;
+}
+
+.card img {
+    width: 35px;
+}
+
+.carousel-img {
+    width: 100%;
+}
+
+.cards {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.card-not {
+    width: 100%;
+    padding: 10px;
+}
+
+
+
+/* Indicações da Semana */
+.indicacoes {
+    padding: 25px 10px;
+}
+
+.recomendacao-container {
+    width: 100%;
+    padding: 15px;
+}
+
+.img-game {
+    width: 100%;
+    height: auto;
+}
+
+.card-game,
+.card-movie {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.img-movie {
+    width: 100%;
+    height: auto;
+}
+
+/* Ajustes de Footer */
+footer {
+    padding: 20px 10px;
+}
+
+.Footer-top img {
+    height: 120px;
+}
+
+.Footer-top {
+    margin-bottom: 15px;
+}
+
+.Footer-bottom {
+    flex-direction: column;
+    align-items: center;
+}
+
+.social .Icones a img {
+    width: 20px;
+}
+
+.copy {
+    font-size: 11px;
+    padding: 10px 0;
+}
 }
 
 @media (max-width: 576px) {
@@ -825,7 +1037,10 @@ footer {
     }
 
     .navbar_logo img{
+        margin-top: -25px auto;
+        margin-left: -25px auto;
         width: 100px;
+        
     }
     
     /*busca*/
@@ -856,7 +1071,7 @@ footer {
         flex-direction: column;
         align-items: center;
         gap: 10px;
-        padding: 15px 20px;
+        padding: 15px 40px;
     }
 
     .card {
