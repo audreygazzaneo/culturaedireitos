@@ -995,7 +995,32 @@ footer {
 
     /* Indicações da Semana */
     .indicacoes {
-        padding: 25px 10px;
+        padding: 25px 25px;
+    }
+
+    .indicacoes h1 {
+        font-size: 1.5rem;
+    }
+
+    .indicacoes p {
+        font-size: 0.9rem;
+    }
+    
+    .star{
+        width: 20px;
+    }
+
+    .indicacoes .tape {
+        padding: 20px 0;
+    }
+
+    .indicacoes .tape h2 {
+        font-size: 1.2rem;
+    }
+
+    .indicacoes .tape .left img,
+    .indicacoes .tape .right img {
+        width: 50px;
     }
 
     .recomendacao-container {
@@ -1018,6 +1043,18 @@ footer {
         width: 70%;
         height: auto;
     }
+    
+    .card-game h3,
+    .card-movie h3 {
+        font-size: 1rem;
+    }
+
+    .card-game p,
+    .card-movie p {
+        font-size: 0.8rem;
+    }
+
+
 
     /* Ajustes de Footer */
     footer {
