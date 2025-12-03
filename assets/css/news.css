@@ -520,3 +520,145 @@ footer {
         text-align: center;
     }
 }
+
+@media (max-width: 480px) {
+  
+    .navbar_container {
+        padding: 0.9rem !important;
+        flex-direction: row !important;
+    }
+
+    .navbar_toggle {
+        display: block;
+    }
+
+    .navbar_links {
+        display: none;
+    }
+    
+    .login button{
+        display: flex;
+        align-items: center;
+        border-bottom: none;
+        border-radius: none;
+        padding-bottom: 0;
+        margin-left: 0;
+        color: #000;
+    }
+
+    #mobileMenu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        opacity: 1;
+        padding: 0.8rem;
+    }
+
+    .navbar_logo img{
+        margin-top: -25px auto;
+        margin-left: -25px auto;
+        width: 100px;
+        
+    }
+    
+    /*busca*/
+    .search-box {
+        display: flex;
+        border-bottom: none;
+        border-radius: none;
+        margin-left: 0;
+    }
+
+    .search-box input {
+        display: none;
+    }
+
+    .search-box i {
+        font-size: 1.0rem;
+    }
+    
+    .card {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .card img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .card .card-content {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .card .card-text {
+        align-items: center;
+        text-align: center; 
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+    .row {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+    
+         * {
+        width: 100%;
+    }
+
+    .comment-box {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .avatar {
+        width: 50px;
+        height: 50px;
+    }
+
+    .comment {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .comment-body h3 {
+        font-size: 1rem;
+    }
+
+    .comment-text {
+        font-size: 0.8rem;
+    }
+
+    footer {
+        padding: 30px 30px;
+    }
+
+    .Footer-top img {
+       width: 150px;
+       height: 100%;
+    }
+
+    .Footer-top {
+        margin-bottom: 15px;
+    }
+
+    .Footer-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social .Icones a img {
+        width: 20px;
+    }
+
+    .copy {
+        font-size: 11px;
+        padding: 10px 0;
+        align-items: center;
+    }
+}
